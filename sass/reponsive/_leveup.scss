@@ -1,0 +1,102 @@
+.leveup {
+  padding-bottom: 100px;
+  border-bottom: 2px solid $line-gray;
+  margin-bottom: 100px;
+  overflow: hidden;
+  &-heading {
+    max-width: 970px;
+    text-align: center;
+    margin: 0 auto 67px;
+  }
+  &-view {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-content {
+    max-width: 386px;
+    padding-left: 16px;
+    &-title {
+      color: $text-hedding;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 1.28;
+      letter-spacing: -1px;
+      margin-bottom: 40px;
+    }
+    &-link {
+      color: $primary-color;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 1.6;
+      text-align: right;
+      letter-spacing: -0.3px;
+      text-transform: uppercase;
+      margin: 60px 0 106px;
+    }
+    &-button {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      &-left,
+      &-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        padding: 20px;
+        border: 1px solid $line-gray;
+        transition: all 0.25s linear;
+      }
+      &-right {
+        opacity: 0.8;
+      }
+      &-left:hover,
+      &-right:hover {
+        opacity: 1;
+        box-shadow: 0px 20px 50px rgba(79, 119, 255, 0.2);
+      }
+    }
+  }
+  &-image {
+    max-width: 883.83px;
+    padding: 23px 97px;
+    &-wrapper {
+      position: relative;
+    }
+  }
+  & h3 {
+    margin: 40px 0 25px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.45;
+    letter-spacing: -1px;
+    color: $primary-black;
+  }
+}
+.layer {
+  z-index: -1;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-60%);
+  width: 800px;
+  height: 500px;
+  background: linear-gradient(185.78deg, #61dcdf 0.38%, #886cff 100%);
+  opacity: 0.4;
+  filter: blur(100px);
+  // transform: matrix(-1, 0, -0.01, -1, 0, 0);
+}
+@media screen and (max-width: 1023.98px) {
+  .layer {
+    width: 300px;
+    height: 300px;
+  }
+}

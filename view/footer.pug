@@ -1,0 +1,29 @@
+.footer#footer
+  .footer-top
+    .footer-wrapper
+      .footer-top-logo 
+        img(srcSet="./image/logo.png 2x", alt="logo")
+        span| Pollock        
+    .footer-top-card.footer-top-card-1
+      +footer-card("Company")
+    .footer-top-card.footer-top-card-2
+      +footer-card("Services")
+    .footer-top-card.footer-top-card-3
+      +footer-card("Contact")
+    
+    .footer-top-end 
+      h3.footer-top-end-title|Newsletter
+      p.footer-top-end-text|Subscribe to our newsletter to keep up to date on our marketing, website, design services, and tips.
+      form.footer-top-end-form 
+        input(type="text",placeholder="Enter email").footer-email.active
+        button(type="submit").button.footer-button.footer-top-end-button| Submit
+      span.footer-top-end-hate|We hate spam as much as you do. We will never, ever send you such emails. 
+  .footer-bottom 
+    h3.footer-bottom-copyright| © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions. Privacy Policy.
+    .footer-bottom-social
+      .footer-bottom-social-icon 
+        img(src="./image/icon-fb.svg", alt="icon-fb")
+      .footer-bottom-social-icon 
+        img(src="./image/icon-tw.svg", alt="icon-fb")
+      .footer-bottom-social-icon 
+        img(src="./image/icon-in.svg", alt="icon-in")

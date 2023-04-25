@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+input,
+button {
+  all: unset;
+}
+html {
+  transition: all 0.25 linear;
+  scroll-behavior: smooth;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: $text-color;
+  letter-spacing: -0.3px;
+  background-color: white;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.heading {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 1.08;
+  text-align: center;
+  letter-spacing: -2px;
+  color: $text-hedding;
+}
+.button {
+  padding: 0 32px;
+  height: 48px;
+  color: white;
+  background-color: $primary-color;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: fit-content;
+}
+.gradient-text {
+  background: linear-gradient(90deg, #ffc0ec -0.92%, #857fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  // text-fill-color: transparent;
+}
+.selectnone {
+  pointer-events: none;
+  user-select: none;
+}
+.primary-text {
+  color: $primary-color;
+}
+input::-webkit-input-placeholder {
+  color: $text-color;
+  opacity: 0.7;
+}
+input:-moz-placeholder {
+  color: $text-color;
+  opacity: 0.7;
+}
+.unshow {
+  display: none;
+}
+.show {
+  display: block;
+}

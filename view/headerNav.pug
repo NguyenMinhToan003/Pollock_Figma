@@ -1,0 +1,16 @@
+.wraper-nav
+    
+    .header-nav 
+      .header-logo 
+        img(srcSet="./image/logo.png 2x", alt="logo")
+        span| Pollock
+      .header-nav-list-wraper
+        ul.header-nav-list 
+          each item in ["Home","Services","About","page","blog","contact"]  
+            li.header-nav-item 
+              //- .header-active
+              a(href="#",target="_plank")= item 
+      .header-tools 
+        img(src="./image/icon-search.svg", alt="icon-search")
+        img(src="./image/icon-bag.svg", alt="icon-bag")
+        button.button.button-signup| Sign Up 

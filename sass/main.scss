@@ -1,0 +1,18 @@
+@import "./set/variable";
+@import "./set/global";
+@import "./set/function";
+main {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+@import "./reponsive/headerNav";
+@import "./reponsive/header";
+@import "./reponsive/leveup";
+@import "./reponsive/weoffer";
+@import "./reponsive/work";
+@import "./reponsive/invest";
+@import "./reponsive/transfomation";
+@import "./reponsive/question";
+@import "./reponsive/startup";
+@import "./reponsive/news";
+@import "./reponsive/footer";

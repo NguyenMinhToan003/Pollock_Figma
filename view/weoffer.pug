@@ -1,0 +1,11 @@
+.weoffer.wrraper
+  .heading.weoffer-heading| We offer 
+    span.gradient-text the best experience.
+  .weoffer-content| When launching a startup, having the right tech tools in place can help set you up for success
+  .weoffer-list 
+    each item in [{link:"./image/sketch.png 2x",title:"Sketch",number:"60%"},{link:"./image/figma.png 2x",title:"Figma",number:"70%"},{link:"./image/typescrip.png 2x",title:"Typescrip",number:"90%"},{link:"./image/wordpress.png 2x",title:"Wordpress",number:"70%"}]
+      .weoffer-item 
+        .weoffer-item-logo
+          img(srcSet=item.link, alt=link)
+          span.weoffer-item-number= item.number
+        span.weoffer-item-title= item.title

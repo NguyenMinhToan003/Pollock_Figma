@@ -1,0 +1,16 @@
+.work#work
+  img.work-bg-wave.selectnone(srcSet="./image/wave2.png 2x", alt="bg-wave")
+  img.work-bg.selectnone(srcSet="./image/bg2.png 2x", alt="bg-work")
+  .work-bg-around1.selectnone  
+  .work-bg-around2.selectnone  
+
+  .work-wrapper 
+    .work-content 
+      h3.work-title| Our goal is to help startups and companies grow and succeed.
+      p.work-text| Since 2006, we’ve been accelerating startups, matchmaking them with corporate clients, and investing in them.
+    .work-images 
+      each img in ["./image/work-image1.png 2x","./image/work-image2.png 2x","./image/work-image3.png 2x"]
+        .work-images-group 
+          .work-image-img 
+            img.work-img(srcSet=img, alt="image-work")
+    a(href="#").work-button.button| View Our Work

@@ -1,0 +1,44 @@
+mixin invest-card(img,title) 
+  .invest-card 
+    .invest-card-icon 
+      img(src=img, alt="icon-invest-card")
+    .invest-card-content 
+      h3.invest-card-title #{title}
+      p.invest-card-text| We design digital platforms to empower users and your brand's tribe.
+
+mixin startup-card(img,name) 
+  .startup-card
+    .startup-card-avatar 
+      img(srcSet=img, alt="avatar-pers")
+    .startup-card-content 
+      p|“I have been a client of Pollock since 2004 and would highly recommend their services.”
+      .startup-card-author
+        span.startup-card-name #{name}
+        span.startup-card-major| Product Designer
+
+mixin startup-item(img,title)
+  a(href="/").startup-bottom-item 
+    .startup-bottom-item-image 
+      img(src=img, alt="icon-product")
+    h3.startup-bottom-item-title= title 
+
+mixin news-card(img,title,text,time,duration)
+  .news-card
+    .news-card-image 
+      img(srcSet=img, alt="news-img")
+    .news-card-content
+      a(href="#").news-card-title #{title}
+      p.news-card-text.unshow #{text}
+      .news-card-time 
+        .news-card-time-date 
+          img(src="./image/icon-lunar.svg", alt="icon-lunar")
+          span #{time}
+        .news-card-time-duration 
+          img(src="./image/icon-clock.svg", alt="icon-clock")
+          span #{duration} min read
+
+mixin footer-card(title)
+    .footer-top-card-title #{title}
+    each item in ["About","Work","Careers","Pricing","Blog"]
+      a(href="/").footer-top-card-item= item 
+        

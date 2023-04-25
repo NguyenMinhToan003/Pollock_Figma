@@ -1,0 +1,48 @@
+.weoffer {
+  margin-bottom: 110px;
+  &-content {
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  &-item {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &-logo {
+      background-color: $bg-light;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 270px;
+      height: 270px;
+      gap: 25px;
+    }
+    &-number {
+      color: $primary-color;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 1.28;
+      letter-spacing: -1px;
+    }
+    &-title {
+      margin-top: 20px;
+      color: $text-hedding;
+      font-weight: 500;
+      font-size: 36px;
+      letter-spacing: -1px;
+      list-style: 1.38;
+    }
+  }
+}
+// @media screen and(max-width:1023.98px) {
+// }

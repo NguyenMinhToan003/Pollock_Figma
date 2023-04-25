@@ -1,0 +1,26 @@
+.startup#startup 
+  .startup-top
+    h2.startup-top-title.heading| What our clients are saying about us
+    .startup-top-list 
+      +startup-card("./image/avatar-pers1.png 2x","Ernest Smith")
+      +startup-card("./image/avatar-pers2.png 2x","Stella Smith")
+      +startup-card("./image/avatar-pers3.png 2x","Ernest Smith")
+    .startup-button 
+      .startup-button-left 
+        img(srcSet="./image/icon-left.png 2x", alt="icon-left")
+      .startup-button-right 
+        img(srcSet="./image/icon-left.png 2x", alt="icon-left")
+  
+  .startup-bottom 
+    .startup-bottom-content 
+      .heading.startup-bottom-title| We have invested in more than 
+        span.gradient-text|2,500+ startups worldwide    
+      .startup-bottom-title-line
+    .startup-bottom-list 
+      +startup-item("./image/icon-mailchimp.svg","Mailchimp")
+      +startup-item("./image/icon-airbnb.svg","Airbnb")
+      +startup-item("./image/icon-intercom.svg","Intercom")
+      +startup-item("./image/icon-stripe.svg","Stripe")
+      +startup-item("./image/icon-solana.svg","Solana")
+      +startup-item("./image/icon-sentry.svg","Sentry")
+
